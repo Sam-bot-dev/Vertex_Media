@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About &amp; Contact | Vertex Media</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#e5eeff",
+                    "on-secondary-container": "#fffbff",
+                    "on-secondary-fixed-variant": "#5a00c6",
+                    "surface": "#f8f9ff",
+                    "on-tertiary-fixed-variant": "#444749",
+                    "on-tertiary": "#ffffff",
+                    "inverse-primary": "#bec6e0",
+                    "primary": "#000000",
+                    "tertiary-container": "#191c1e",
+                    "error-container": "#ffdad6",
+                    "on-primary-fixed-variant": "#3f465c",
+                    "secondary-fixed": "#eaddff",
+                    "surface-tint": "#565e74",
+                    "on-secondary": "#ffffff",
+                    "outline": "#76777d",
+                    "primary-fixed-dim": "#bec6e0",
+                    "primary-container": "#131b2e",
+                    "surface-variant": "#d3e4fe",
+                    "background": "#f8f9ff",
+                    "on-primary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-container": "#7c839b",
+                    "error": "#ba1a1a",
+                    "on-surface": "#0b1c30",
+                    "on-tertiary-container": "#818486",
+                    "secondary-fixed-dim": "#d2bbff",
+                    "tertiary-fixed": "#e0e3e5",
+                    "on-surface-variant": "#45464d",
+                    "on-background": "#0b1c30",
+                    "surface-container-low": "#eff4ff",
+                    "surface-bright": "#f8f9ff",
+                    "inverse-on-surface": "#eaf1ff",
+                    "secondary": "#712ae2",
+                    "surface-container-high": "#dce9ff",
+                    "inverse-surface": "#213145",
+                    "outline-variant": "#c6c6cd",
+                    "surface-dim": "#cbdbf5",
+                    "on-secondary-fixed": "#25005a",
+                    "on-error-container": "#93000a",
+                    "secondary-container": "#8a4cfc",
+                    "primary-fixed": "#dae2fd",
+                    "on-primary-fixed": "#131b2e",
+                    "surface-container-highest": "#d3e4fe",
+                    "tertiary": "#000000",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed-dim": "#c4c7c9",
+                    "on-tertiary-fixed": "#191c1e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "stack-sm": "8px",
+                    "container-max": "1280px",
+                    "margin-desktop": "64px",
+                    "margin-mobile": "16px",
+                    "stack-lg": "32px",
+                    "section-padding": "120px",
+                    "stack-md": "16px"
+            },
+            "fontFamily": {
+                    "label-sm": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "headline-lg-mobile": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "display-lg-mobile": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "label-sm": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "headline-lg-mobile": ["30px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(15, 23, 42, 0.1);
+        }
+        .bg-gradient-brand {
+            background: linear-gradient(135deg, #712ae2 0%, #000000 100%);
+        }
+        .hero-mesh {
+            background-color: #f8f9ff;
+            background-image: radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
+                              radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%), 
+                              radial-gradient(at 100% 0%, hsla(263,77%,52%,1) 0, transparent 50%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-background font-body-md overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl border-b border-black/10 shadow-sm h-20 transition-all duration-300">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop h-full">
+<div class="font-headline-md text-headline-md font-bold text-primary tracking-tighter">Vertex Media</div>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center gap-stack-lg">
+<a class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#">Home</a>
+<a class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#">Services</a>
+<a class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#">Process</a>
+<a class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#">Portfolio</a>
+<a class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold border-b-2 border-secondary" href="#">About</a>
+<button class="ml-4 px-6 py-3 bg-primary text-on-primary font-label-sm text-label-sm uppercase rounded-full hover:scale-95 active:scale-90 transition-transform">
+                    Book a Growth Audit
+                </button>
+</div>
+<!-- Mobile Toggle -->
+<div class="md:hidden">
+<span class="material-symbols-outlined text-on-surface cursor-pointer">menu</span>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section: Mission & Vision -->
+<section class="relative py-section-padding overflow-hidden">
+<div class="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-surface-variant via-surface to-background opacity-50"></div>
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid md:grid-cols-2 gap-stack-lg items-center">
+<div>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-stack-md text-primary">
+                            The Team Behind <span class="text-secondary">Growth</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg max-w-xl">
+                            We are a collective of digital architects and marketing strategists dedicated to turning your business vision into a market-leading digital presence.
+                        </p>
+<div class="flex flex-col sm:flex-row gap-stack-md">
+<div class="glass-card p-stack-md rounded-xl flex items-start gap-4">
+<div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1">rocket_launch</span>
+</div>
+<div>
+<h3 class="font-headline-md text-[18px] mb-1">Our Mission</h3>
+<p class="text-on-surface-variant text-sm">Helping businesses grow online through high-conversion design and data-driven strategy.</p>
+</div>
+</div>
+<div class="glass-card p-stack-md rounded-xl flex items-start gap-4">
+<div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1">visibility</span>
+</div>
+<div>
+<h3 class="font-headline-md text-[18px] mb-1">Our Vision</h3>
+<p class="text-on-surface-variant text-sm">Becoming the most trusted digital partner for elite healthcare, dental, and real estate brands.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 bg-secondary/20 blur-2xl rounded-full opacity-20 group-hover:opacity-40 transition-opacity"></div>
+<img alt="Vertex Media Team Workspace" class="rounded-3xl shadow-2xl relative z-10 w-full object-cover aspect-video" data-alt="A modern, high-end creative studio workspace where a diverse team of digital professionals collaborates. The scene features sleek glass partitions, large monitors displaying clean web designs, and a minimalist interior design. The lighting is soft and bright, highlighting the premium, professional, and innovative atmosphere of a leading digital agency in light-mode." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOKYGQ0n_zYl3SwcDjSlBtUCE_V-d6DQGJjv_UX5nsKbeoKEKnM_ZMzq7mnBlsE0t-Dwh-L40TbWgyR8gRRSodQrwFUvIYuKFDxnJQzh7tfFrFmKbUlDxskwj-s4ogKMq4g95ciNNO3353IBQ-eXcn04q03Vvd8-OurJmDMUt3EwJjzBM1yTzBWvVfBEBZpqyd25sHfbG-4IHLae5EH2R6DawQ46EHZGagA2f1liynVJHL6lLTr7PvGqXZUNRfYHJ9ppVqHwxiH7Y"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Founders Grid -->
+<section class="py-section-padding bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-margin-desktop text-center mb-stack-lg">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-4">Meet The Team</h2>
+<p class="text-on-surface-variant font-body-lg max-w-2xl mx-auto">Led by a trio of specialists committed to engineering digital success for every client.</p>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop grid md:grid-cols-3 gap-stack-lg">
+<!-- Rohan -->
+<div class="glass-card rounded-3xl overflow-hidden group hover:scale-[1.02] transition-all duration-300">
+<div class="aspect-[4/5] relative overflow-hidden">
+<img alt="Rohan - Co-Founder" class="object-cover w-full h-full grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A professional portrait of Rohan, a co-founder of a digital agency. He is wearing a minimalist dark navy blazer over a white shirt, exuding confidence and leadership. The background is a soft-focus modern office setting with glass elements. The lighting is high-key and professional, matching a clean, corporate modern aesthetic with a focus on trust and approachability." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQMC6JiBm44HHkB6javodR2XlfvDxbZOyuS2k9zmNkjLnFq6Oqzt8v7JfOZoFpk4goIH0BYwGYnbLKp0jcgLtXIyaw9Obg79xdb3ZcGQlFeLhLnfbZ3IDgNvDlX6CwYmCeabaRp7qwsL09arkfIO6fmaX5nLKPXI54d1txbKqLfWddmZuFNOGpTTydGWHN3NPsTqbtaW7qSTjfoG55-W0Qs3F5vtG8-abGQVGd-MkL9Jon4wry7wwgGcWMxQ_MrJySeCDQMZ3DZZw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 text-white">
+<p class="font-label-sm uppercase tracking-widest text-secondary-fixed mb-1">Co-Founder &amp; Strategy</p>
+<h3 class="font-headline-md text-white">Rohan</h3>
+</div>
+</div>
+<div class="p-stack-md">
+<p class="text-on-surface-variant text-sm">Specializing in high-level business architecture and growth trajectories for our healthcare partners.</p>
+</div>
+</div>
+<!-- Bhavesh -->
+<div class="glass-card rounded-3xl overflow-hidden group hover:scale-[1.02] transition-all duration-300">
+<div class="aspect-[4/5] relative overflow-hidden">
+<img alt="Bhavesh - Technical Lead" class="object-cover w-full h-full grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A crisp, professional studio portrait of Bhavesh, the technical lead of a digital agency. He has a sharp, focused expression and is dressed in a modern charcoal sweater. The background is a minimalist light grey, maintaining a clean corporate modern look. The lighting is soft and even, highlighting technical precision and reliability in a light-mode interface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUU5LHWH5rb_XuEp_ejEC9mo0-Ne4GSefmI-1B202c454vIK7-YdbPrfnje5JDa7S1I_H3EXdWDCU61wpaLO2myqW5YdCTj7TEqHb3R9w97Z4PTwPSeOaH17fhpctrZb09uJjDPKx1jRej0TOQth59uwf8tMSAbITYtbdb3qa4L8MJxL9NEbZ3Mca8z8Dv6snHsDyq0-1CO3Lck44hN9fOzJCrSLWA_hrLFkZ8WVsTICpy29byQxqsru-v9t2kUnaWjxnQYPRjfGQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 text-white">
+<p class="font-label-sm uppercase tracking-widest text-secondary-fixed mb-1">Technical Operations</p>
+<h3 class="font-headline-md text-white">Bhavesh</h3>
+</div>
+</div>
+<div class="p-stack-md">
+<p class="text-on-surface-variant text-sm">Ensuring our tech stack remains at the cutting edge of performance, security, and mobile-first design.</p>
+</div>
+</div>
+<!-- Mahir -->
+<div class="glass-card rounded-3xl overflow-hidden group hover:scale-[1.02] transition-all duration-300">
+<div class="aspect-[4/5] relative overflow-hidden">
+<img alt="Mahir - Design Director" class="object-cover w-full h-full grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A stylish, creative professional portrait of Mahir, the design director. He is wearing a dark, well-fitted t-shirt and glasses, looking directly into the camera with a creative and thoughtful gaze. The environment is an upscale design studio with subtle artistic accents in the background. The lighting is warm and directional, emphasizing creative vision and aesthetic excellence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCm2NIoWXVeK22h3f4fGh3IcFDn1L7XXLFyw-WpBPKpS6HleAoiwGbIAx78tR6-4dX1Jv-4vS5hBZ-CtwINOvOMUWRorAmPzuLm45Nm7M9wZB003G6FVAo2IQT5pbR6IQgKibBFxGI8h-eovPETFc5zFgq-zMrb4_g3tx4cvHS1F0ICdVqbIXmAXYUgXXWrV8dgbbIlCEW9Y3qKpc3jTJznqz9-tOwFrkvbZUhWKQbfLLqUR8CxpLTfB6Vd8_RIYgb90183FcKlZg8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 text-white">
+<p class="font-label-sm uppercase tracking-widest text-secondary-fixed mb-1">Creative Direction</p>
+<h3 class="font-headline-md text-white">Mahir</h3>
+</div>
+</div>
+<div class="p-stack-md">
+<p class="text-on-surface-variant text-sm">Defining the visual language of our clients to ensure they stand out in crowded digital marketplaces.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-section-padding" id="contact">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid lg:grid-cols-2 gap-stack-lg">
+<div class="pr-0 lg:pr-stack-lg">
+<h2 class="font-display-lg text-display-lg-mobile md:text-[48px] mb-stack-md">Let's Build Your <span class="text-secondary">Vertex</span>.</h2>
+<p class="font-body-lg text-on-surface-variant mb-stack-lg">Ready to transform your online presence? Fill out the form and our team will get back to you within 24 hours with a custom strategy.</p>
+<div class="space-y-stack-md">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary text-3xl">mail</span>
+<div>
+<p class="font-label-sm text-on-surface-variant uppercase">Email Us</p>
+<p class="font-headline-md text-[18px]">growth@vertexmedia.io</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary text-3xl">location_on</span>
+<div>
+<p class="font-label-sm text-on-surface-variant uppercase">Global Hub</p>
+<p class="font-headline-md text-[18px]">Remote-First Agency</p>
+</div>
+</div>
+</div>
+</div>
+<div class="glass-card p-stack-lg rounded-3xl">
+<form class="space-y-stack-md">
+<div class="grid grid-cols-2 gap-4">
+<div class="col-span-2 sm:col-span-1">
+<label class="block font-label-sm text-xs text-on-surface-variant mb-1 uppercase">Full Name</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-secondary transition-all py-2 placeholder:text-outline-variant" placeholder="John Doe" type="text"/>
+</div>
+<div class="col-span-2 sm:col-span-1">
+<label class="block font-label-sm text-xs text-on-surface-variant mb-1 uppercase">Business Name</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-secondary transition-all py-2 placeholder:text-outline-variant" placeholder="Vertex Dental" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="col-span-2 sm:col-span-1">
+<label class="block font-label-sm text-xs text-on-surface-variant mb-1 uppercase">Email Address</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-secondary transition-all py-2 placeholder:text-outline-variant" placeholder="john@example.com" type="email"/>
+</div>
+<div class="col-span-2 sm:col-span-1">
+<label class="block font-label-sm text-xs text-on-surface-variant mb-1 uppercase">Phone Number</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-secondary transition-all py-2 placeholder:text-outline-variant" placeholder="+1 (555) 000-0000" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-xs text-on-surface-variant mb-1 uppercase">Service Needed</label>
+<select class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-secondary transition-all py-2 text-on-surface-variant">
+<option>Select a service</option>
+<option>Healthcare Web Design</option>
+<option>Dental Practice Growth</option>
+<option>E-commerce Solutions</option>
+<option>SEO &amp; Google Ads</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-xs text-on-surface-variant mb-1 uppercase">How can we help?</label>
+<textarea class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-secondary transition-all py-2 placeholder:text-outline-variant" placeholder="Tell us about your goals..." rows="3"></textarea>
+</div>
+<button class="w-full py-4 bg-gradient-brand text-white font-headline-md text-body-md rounded-xl hover:shadow-[0_10px_40px_-10px_rgba(113,42,226,0.5)] transition-all transform hover:-translate-y-1">
+                                Get My Free Demo Website
+                            </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-section-padding bg-surface-container-highest/20">
+<div class="max-w-3xl mx-auto px-margin-desktop">
+<h2 class="font-headline-lg text-center mb-stack-lg">Frequently Asked Questions</h2>
+<div class="space-y-4">
+<!-- FAQ Item 1 -->
+<div class="glass-card rounded-2xl overflow-hidden">
+<button class="w-full p-6 text-left flex justify-between items-center group" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.arrow').classList.toggle('rotate-180')">
+<span class="font-headline-md text-[18px]">What is the typical cost for a project?</span>
+<span class="material-symbols-outlined arrow transition-transform">expand_more</span>
+</button>
+<div class="px-6 pb-6 text-on-surface-variant hidden">
+                            Our projects are tailored to specific business needs. However, most professional web builds start at $2,500, with comprehensive monthly growth packages available for scaling practices.
+                        </div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="glass-card rounded-2xl overflow-hidden">
+<button class="w-full p-6 text-left flex justify-between items-center group" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.arrow').classList.toggle('rotate-180')">
+<span class="font-headline-md text-[18px]">How long does it take to go live?</span>
+<span class="material-symbols-outlined arrow transition-transform">expand_more</span>
+</button>
+<div class="px-6 pb-6 text-on-surface-variant hidden">
+                            A standard custom website typically takes 4–6 weeks from discovery to launch. We prioritize quality and technical optimization during every phase.
+                        </div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="glass-card rounded-2xl overflow-hidden">
+<button class="w-full p-6 text-left flex justify-between items-center group" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.arrow').classList.toggle('rotate-180')">
+<span class="font-headline-md text-[18px]">Will my website be mobile-friendly?</span>
+<span class="material-symbols-outlined arrow transition-transform">expand_more</span>
+</button>
+<div class="px-6 pb-6 text-on-surface-variant hidden">
+                            Absolutely. We follow a "Mobile-First" philosophy, ensuring your site looks and performs flawlessly on smartphones, tablets, and desktops.
+                        </div>
+</div>
+<!-- FAQ Item 4 -->
+<div class="glass-card rounded-2xl overflow-hidden">
+<button class="w-full p-6 text-left flex justify-between items-center group" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.arrow').classList.toggle('rotate-180')">
+<span class="font-headline-md text-[18px]">Do you handle SEO and Local Ranking?</span>
+<span class="material-symbols-outlined arrow transition-transform">expand_more</span>
+</button>
+<div class="px-6 pb-6 text-on-surface-variant hidden">
+                            Yes. Every site we build is technically optimized for search engines. We also offer dedicated SEO packages to help you dominate local search results for your industry.
+                        </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-section-padding bg-primary text-on-primary">
+<div class="max-w-container-max mx-auto px-margin-desktop text-center">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-stack-md">Ready To Grow Your Business Online?</h2>
+<p class="font-body-lg text-on-primary/70 mb-stack-lg max-w-2xl mx-auto">Join the 50+ businesses that have scaled their digital footprint with Vertex Media.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-stack-md">
+<button class="px-10 py-5 bg-secondary text-white font-headline-md rounded-full hover:bg-secondary-container transition-colors shadow-lg shadow-secondary/20">
+                        Get Free Demo
+                    </button>
+<button class="px-10 py-5 bg-transparent border-2 border-white/20 hover:border-white text-white font-headline-md rounded-full transition-colors">
+                        View Portfolio
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary text-on-primary w-full rounded-t-xl overflow-hidden">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg max-w-container-max mx-auto px-margin-desktop py-section-padding">
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-lg text-headline-lg font-black text-on-primary mb-stack-md">Vertex Media</div>
+<p class="text-on-primary/70 font-body-md max-w-xs">Elevating dental and healthcare brands through elite digital strategy and premium design.</p>
+</div>
+<div>
+<h4 class="font-label-sm uppercase tracking-widest mb-6 opacity-50">Industries</h4>
+<ul class="space-y-4 font-body-md">
+<li><a class="text-on-primary/70 hover:text-on-primary hover:underline transition-all" href="#">Dental Web Design</a></li>
+<li><a class="text-on-primary/70 hover:text-on-primary hover:underline transition-all" href="#">Healthcare Solutions</a></li>
+<li><a class="text-on-primary/70 hover:text-on-primary hover:underline transition-all" href="#">E-commerce</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-sm uppercase tracking-widest mb-6 opacity-50">Company</h4>
+<ul class="space-y-4 font-body-md">
+<li><a class="text-on-primary/70 hover:text-on-primary hover:underline transition-all" href="#">About Us</a></li>
+<li><a class="text-on-primary/70 hover:text-on-primary hover:underline transition-all" href="#">Process</a></li>
+<li><a class="text-on-primary/70 hover:text-on-primary hover:underline transition-all" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-sm uppercase tracking-widest mb-6 opacity-50">Connect</h4>
+<ul class="space-y-4 font-body-md">
+<li><a class="text-on-primary/70 hover:text-on-primary hover:underline transition-all" href="#">Privacy Policy</a></li>
+<li><a class="text-on-primary/70 hover:text-on-primary hover:underline transition-all" href="#">Terms of Service</a></li>
+<li class="pt-4 flex gap-4">
+<span class="material-symbols-outlined cursor-pointer hover:text-secondary-container transition-colors">brand_awareness</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-secondary-container transition-colors">public</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-secondary-container transition-colors">forum</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop py-8 border-t border-white/10 text-center md:text-left">
+<p class="text-on-primary/50 text-sm">© 2024 Vertex Media. Built for Growth.</p>
+</div>
+</footer>
+<script>
+        // Simple scroll effect for navbar
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('h-16', 'bg-white/90');
+                nav.classList.remove('h-20', 'bg-white/70');
+            } else {
+                nav.classList.add('h-20', 'bg-white/70');
+                nav.classList.remove('h-16', 'bg-white/90');
+            }
+        });
+
+        // Add subtle parallax to founder cards
+        document.querySelectorAll('.glass-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const { left, top, width, height } = card.getBoundingClientRect();
+                const x = (e.clientX - left) / width - 0.5;
+                const y = (e.clientY - top) / height - 0.5;
+                card.style.transform = `perspective(1000px) rotateX(${y * 4}deg) rotateY(${x * 4}deg) scale3d(1.02, 1.02, 1.02)`;
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = '';
+            });
+        });
+    </script>
+</body></html>

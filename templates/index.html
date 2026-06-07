@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vertex Media | Professional Websites for Growth</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#e5eeff",
+                    "on-secondary-container": "#fffbff",
+                    "on-secondary-fixed-variant": "#5a00c6",
+                    "surface": "#f8f9ff",
+                    "on-tertiary-fixed-variant": "#444749",
+                    "on-tertiary": "#ffffff",
+                    "inverse-primary": "#bec6e0",
+                    "primary": "#000000",
+                    "tertiary-container": "#191c1e",
+                    "error-container": "#ffdad6",
+                    "on-primary-fixed-variant": "#3f465c",
+                    "secondary-fixed": "#eaddff",
+                    "surface-tint": "#565e74",
+                    "on-secondary": "#ffffff",
+                    "outline": "#76777d",
+                    "primary-fixed-dim": "#bec6e0",
+                    "primary-container": "#131b2e",
+                    "surface-variant": "#d3e4fe",
+                    "background": "#f8f9ff",
+                    "on-primary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-container": "#7c839b",
+                    "error": "#ba1a1a",
+                    "on-surface": "#0b1c30",
+                    "on-tertiary-container": "#818486",
+                    "secondary-fixed-dim": "#d2bbff",
+                    "tertiary-fixed": "#e0e3e5",
+                    "on-surface-variant": "#45464d",
+                    "on-background": "#0b1c30",
+                    "surface-container-low": "#eff4ff",
+                    "surface-bright": "#f8f9ff",
+                    "inverse-on-surface": "#eaf1ff",
+                    "secondary": "#712ae2",
+                    "surface-container-high": "#dce9ff",
+                    "inverse-surface": "#213145",
+                    "outline-variant": "#c6c6cd",
+                    "surface-dim": "#cbdbf5",
+                    "on-secondary-fixed": "#25005a",
+                    "on-error-container": "#93000a",
+                    "secondary-container": "#8a4cfc",
+                    "primary-fixed": "#dae2fd",
+                    "on-primary-fixed": "#131b2e",
+                    "surface-container-highest": "#d3e4fe",
+                    "tertiary": "#000000",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed-dim": "#c4c7c9",
+                    "on-tertiary-fixed": "#191c1e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "stack-sm": "8px",
+                    "container-max": "1280px",
+                    "margin-desktop": "64px",
+                    "margin-mobile": "16px",
+                    "stack-lg": "32px",
+                    "section-padding": "120px",
+                    "stack-md": "16px"
+            },
+            "fontFamily": {
+                    "label-sm": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "headline-lg-mobile": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "display-lg-mobile": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "label-sm": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "headline-lg-mobile": ["30px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(15, 23, 42, 0.1);
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at top right, #eaddff 0%, #f8f9ff 50%);
+        }
+        .cta-gradient {
+            background: linear-gradient(135deg, #712ae2 0%, #131b2e 100%);
+        }
+        .glow-on-hover:hover {
+            box-shadow: 0 0 25px rgba(113, 42, 226, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-secondary/30">
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 dark:bg-surface-container/70 backdrop-blur-xl border-b border-black/10 dark:border-white/10 shadow-sm transition-all duration-300">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-20">
+<a class="font-headline-md text-headline-md font-bold text-primary dark:text-on-surface tracking-tighter" href="#">Vertex Media</a>
+<div class="hidden md:flex items-center gap-stack-lg">
+<a class="text-secondary dark:text-secondary-container font-bold border-b-2 border-secondary font-label-sm text-label-sm uppercase tracking-wider" href="/">Home</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-on-surface transition-colors font-label-sm text-label-sm uppercase tracking-wider" href="/service">Services</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-on-surface transition-colors font-label-sm text-label-sm uppercase tracking-wider" href="/process">Process</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-on-surface transition-colors font-label-sm text-label-sm uppercase tracking-wider" href="/process">Portfolio</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-on-surface transition-colors font-label-sm text-label-sm uppercase tracking-wider" href="/about">About</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-on-surface transition-colors font-label-sm text-label-sm uppercase tracking-wider" href="/contact">Contact</a>
+</div>
+<button class="hidden md:block bg-primary text-on-primary px-stack-lg py-3 rounded-full font-label-sm text-label-sm uppercase tracking-wider scale-95 active:scale-90 transition-transform hover:bg-secondary">
+                Book a Growth Audit
+            </button>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden material-symbols-outlined text-primary">menu</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="hero-gradient pt-40 pb-section-padding overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid md:grid-cols-2 gap-stack-lg items-center">
+<div class="space-y-stack-lg">
+<div class="inline-block bg-secondary/10 text-secondary px-4 py-1 rounded-full font-label-sm text-label-sm uppercase">
+                    Trusted by 200+ Businesses
+                </div>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface">
+                    Professional Websites That Bring You <span class="text-secondary">More Customers</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                    We build high-performance digital foundations that establish credibility and turn casual visitors into loyal customers through expert web development and conversion optimization.
+                </p>
+<div class="flex flex-col sm:flex-row gap-stack-md pt-stack-md">
+<button class="cta-gradient text-on-primary px-8 py-5 rounded-full font-label-sm text-label-sm uppercase tracking-widest glow-on-hover transition-all">
+                        Get Free Website Demo
+                    </button>
+<button class="border border-outline px-8 py-5 rounded-full font-label-sm text-label-sm uppercase tracking-widest hover:bg-on-surface hover:text-surface transition-all">
+                        Book Consultation
+                    </button>
+</div>
+</div>
+<div class="relative mt-stack-lg md:mt-0">
+<div class="absolute -top-10 -left-10 w-64 h-64 bg-secondary-container/20 rounded-full blur-[80px]"></div>
+<div class="glass-card p-4 rounded-xl rotate-3 shadow-2xl relative z-10">
+<img class="rounded-lg shadow-inner w-full h-auto" data-alt="A high-end, clean mockup of a modern business dashboard displayed on a sleek, thin-bezel silver laptop. The UI on the screen features glassmorphic elements, vibrant purple accents, and high-quality data visualizations. The laptop sits on a minimalist white desk in a sunlit, professional office environment with soft bokeh in the background. The lighting is crisp and modern, emphasizing a light-mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7AvfjA0YVM8HvvbMAvB_ZFzisiQYMvumm2AFpFgKEc8pX66mU1Nm73jIjL6blDumgY6uuAGGZBuJbUcG2BPysr8fPX1UYleVwRkfYd7FnKecfq00OStOkhjJsBFV-O8HUp6Ch5fXHlw6qxsUwRMKFIcT_gLxtxu_wBdbzjLSFicp0Dau1RkhJ_C1TsJhaM8G7YvdUf2IQpRxp_bp_NCAn9lVE4Dy1A4SfFP0Eu-QBtbWXUyK2Q4caTjeTo-YpH2Jo9XeXoxL04r8"/>
+</div>
+<div class="absolute bottom-0 -right-4 w-1/2 glass-card p-2 rounded-xl -rotate-2 shadow-2xl z-20 hidden lg:block">
+<img class="rounded-lg w-full" data-alt="A smartphone showcasing a mobile-responsive website design with a luxury aesthetic. The screen display features a clean layout with elegant typography and deep purple interactive buttons. The phone is held by a professional in a minimalist setting, highlighting the seamless user experience on mobile devices. The scene is illuminated by soft, natural light, maintaining a high-tier corporate feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBydfGFhQCsVi7501PzG3b49G1xeKAgNfd4mn4BL4HlKGp6InCC4cEk0ufeKwdPofnAAoIec2Fcyy4V5Wo5-ee74l0bAg-KWzUg0VCXJRmNrOSyYBIMBfxZQKfNF8pY9NNWSmpaoAvajbOopm1t4NED5FensFPGy_eeihTKC18JyMyAueIzZAmbZk9ZugOtdwQxxODGA5tE4b9ElPOhGSCQL-20AwuAtYhLRicZmddWVnb7qBog1DcC3ANyJXKRhj3oAxVqabV2S9s"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Problem Section -->
+<section class="bg-surface-container-low py-section-padding">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center mb-16">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-stack-md">
+                Your Business Is <span class="text-error">Losing Customers</span> Without a Website
+            </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                In today's digital world, no online presence means you're invisible to your best leads.
+            </p>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid md:grid-cols-3 gap-stack-lg">
+<!-- Problem Card 1 -->
+<div class="glass-card p-10 rounded-xl space-y-stack-md group hover:-translate-y-2 transition-transform">
+<div class="w-12 h-12 bg-error/10 text-error flex items-center justify-center rounded-lg">
+<span class="material-symbols-outlined">broken_image</span>
+</div>
+<h3 class="font-headline-md text-headline-md">Zero Credibility</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    81% of people research a business online before buying. If they can't find you, they don't trust you.
+                </p>
+</div>
+<!-- Problem Card 2 -->
+<div class="glass-card p-10 rounded-xl space-y-stack-md group hover:-translate-y-2 transition-transform">
+<div class="w-12 h-12 bg-error/10 text-error flex items-center justify-center rounded-lg">
+<span class="material-symbols-outlined">person_off</span>
+</div>
+<h3 class="font-headline-md text-headline-md">Lost Lead Flow</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Your competitors are capturing all the search traffic. Without a site, you're handing them your profits.
+                </p>
+</div>
+<!-- Problem Card 3 -->
+<div class="glass-card p-10 rounded-xl space-y-stack-md group hover:-translate-y-2 transition-transform">
+<div class="w-12 h-12 bg-error/10 text-error flex items-center justify-center rounded-lg">
+<span class="material-symbols-outlined">timer_off</span>
+</div>
+<h3 class="font-headline-md text-headline-md">Limited Hours</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Without a website, you only exist during business hours. A website works 24/7 as your top salesperson.
+                </p>
+</div>
+</div>
+</section>
+<!-- Benefits Section -->
+<section class="py-section-padding">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row gap-20 items-center">
+<div class="w-full md:w-1/2 grid grid-cols-2 gap-stack-md">
+<div class="bg-surface-container p-1 rounded-2xl shadow-sm">
+<img class="rounded-xl h-48 w-full object-cover" data-alt="A professional analyst reviewing a vibrant digital chart showing consistent growth and lead generation statistics. The screen glows with shades of electric blue and violet, reflecting onto the dark table and glass surfaces. The atmosphere is focused and successful, with a clean corporate aesthetic that emphasizes data-driven results and professional reliability." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAM7Rg6DZkJ2tjjykB825GHyhXfdL7rD3EbssAIAPtIJ3J2itxOme18sQSskLg5F3qgV9Hg1K05pdRJfnsn3odT6tqn0LpDMg5nhqa1IelXrH5acnTyL_KoIWmrD9k5wH3mK8x1kzO2CZ374sMlW_a3vJO-RSITmvANgMzHQV44lj0VHlk_KPfhhUmTdtV9hyLfyjvYab5tGMZ8hdPFv31uYTw99_46tsnTat31yi2T9Eno4Er8F7kuVvWrrou5sKLOfhOEuo-hwzI"/>
+</div>
+<div class="bg-surface-container p-1 rounded-2xl shadow-sm mt-8">
+<img class="rounded-xl h-48 w-full object-cover" data-alt="A diverse team of high-end web developers and designers collaborating in a modern, open-plan workspace with glass walls and minimalist furniture. The lighting is bright and natural, casting soft shadows. The visual style is premium and corporate, focusing on teamwork and technical precision in a technologically advanced environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQ1IgZ74eZCCWXfxHdRx4I3GSjf-Wd4sR6ifu-qPlLYPg9B-9wicV4ADtn558cnAR9OnUqwAeLpMhsipswXqM08VuXqqay3SRTv0tmbrqbXE_hoIXLf2CweRHlR8kSimwIpqFKkkxOTrRrCoUCFhy6HEV5Bhz4Txe7UT8bNlb3My4e57ivQnFkmU9WcvvfBb6eKYSgYZD99XvTfnKPLhEH7QDJgyyMoZpO1iA4soVL15GNuHVY7HmYmk42hhWirQ06eHkplWpi27g"/>
+</div>
+</div>
+<div class="w-full md:w-1/2 space-y-stack-lg">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg">
+                    Why Every Business Needs a <span class="text-secondary">Website</span>
+</h2>
+<div class="space-y-stack-md">
+<div class="flex gap-stack-md">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<p class="font-headline-md text-[18px] font-bold">24/7 Availability</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Your business never sleeps. Let customers find information and book services anytime.</p>
+</div>
+</div>
+<div class="flex gap-stack-md">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<p class="font-headline-md text-[18px] font-bold">Automatic Lead Generation</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Custom contact forms and calls-to-action capture intent while you focus on operations.</p>
+</div>
+</div>
+<div class="flex gap-stack-md">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<p class="font-headline-md text-[18px] font-bold">Establish Authority</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Showcase reviews, case studies, and your portfolio to prove you're the best in the industry.</p>
+</div>
+</div>
+</div>
+<button class="bg-primary text-on-primary px-10 py-5 rounded-full font-label-sm text-label-sm uppercase tracking-widest hover:bg-secondary transition-all">
+                    Learn Our Process
+                </button>
+</div>
+</div>
+</section>
+<!-- Free Demo CTA Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pb-section-padding">
+<div class="cta-gradient rounded-3xl p-12 md:p-24 relative overflow-hidden text-center text-on-primary">
+<div class="absolute top-0 right-0 w-96 h-96 bg-secondary/20 blur-[120px] rounded-full -mr-48 -mt-48"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-surface-variant/10 blur-[80px] rounded-full -ml-32 -mb-32"></div>
+<div class="relative z-10 max-w-3xl mx-auto space-y-stack-lg">
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg">
+                    Get a FREE Website Demo Before You Pay
+                </h2>
+<p class="font-body-lg text-body-lg opacity-80">
+                    We're so confident in our work that we'll design a custom homepage mockup for your business for free. No credit card required. No commitment.
+                </p>
+<div class="pt-stack-md">
+<button class="bg-white text-primary px-12 py-6 rounded-full font-label-sm text-label-sm uppercase tracking-widest font-bold hover:scale-105 active:scale-95 transition-all shadow-xl">
+                        Claim Free Demo
+                    </button>
+</div>
+<p class="font-label-sm text-label-sm uppercase tracking-tighter opacity-60">Limited to 5 demos per month. 3 spots left for August.</p>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-tertiary-container w-full rounded-t-xl py-section-padding">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="space-y-stack-md">
+<h2 class="font-headline-lg text-headline-lg font-black text-on-primary dark:text-on-tertiary-container">Vertex Media</h2>
+<p class="font-body-md text-body-md text-on-primary/70 dark:text-on-tertiary-container/70">
+                    High-end web solutions for dental, healthcare, and real estate professionals.
+                </p>
+</div>
+<div>
+<h4 class="font-label-sm text-label-sm uppercase text-on-primary mb-stack-md">Solutions</h4>
+<ul class="space-y-stack-sm font-body-md text-body-md text-on-primary/70 dark:text-on-tertiary-container/70">
+<li><a class="hover:text-on-primary transition-all hover:underline" href="#">Dental Web Design</a></li>
+<li><a class="hover:text-on-primary transition-all hover:underline" href="#">Healthcare Solutions</a></li>
+<li><a class="hover:text-on-primary transition-all hover:underline" href="#">E-commerce</a></li>
+<li><a class="hover:text-on-primary transition-all hover:underline" href="#">Real Estate Portals</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-sm text-label-sm uppercase text-on-primary mb-stack-md">Company</h4>
+<ul class="space-y-stack-sm font-body-md text-body-md text-on-primary/70 dark:text-on-tertiary-container/70">
+<li><a class="hover:text-on-primary transition-all hover:underline" href="#">About</a></li>
+<li><a class="hover:text-on-primary transition-all hover:underline" href="#">Portfolio</a></li>
+<li><a class="hover:text-on-primary transition-all hover:underline" href="#">Terms of Service</a></li>
+<li><a class="hover:text-on-primary transition-all hover:underline" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-sm text-label-sm uppercase text-on-primary mb-stack-md">Contact</h4>
+<p class="font-body-md text-body-md text-on-primary/70 dark:text-on-tertiary-container/70 mb-stack-md">
+                    hello@vertexmedia.io<br/>
+                    +1 (555) 000-GROW
+                </p>
+<div class="flex gap-stack-md">
+<span class="material-symbols-outlined text-on-primary">public</span>
+<span class="material-symbols-outlined text-on-primary">campaign</span>
+<span class="material-symbols-outlined text-on-primary">alternate_email</span>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-20 pt-8 border-t border-white/10">
+<p class="font-body-md text-body-md text-on-primary/50 text-center">© 2024 Vertex Media. Built for Growth.</p>
+</div>
+</footer>
+<script>
+        // Subtle scroll effect for navigation
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 20) {
+                nav.classList.add('py-4', 'shadow-md');
+                nav.classList.remove('h-20');
+            } else {
+                nav.classList.remove('py-4', 'shadow-md');
+                nav.classList.add('h-20');
+            }
+        });
+
+        // Hover tilt effect for cards
+        const cards = document.querySelectorAll('.glass-card');
+        cards.forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                const rotateX = (y - centerY) / 20;
+                const rotateY = (centerX - x) / 20;
+                
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px)`;
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)`;
+                if(card.classList.contains('rotate-3')) {
+                    card.style.transform = 'rotate(3deg)';
+                }
+            });
+        });
+    </script>
+</body></html>

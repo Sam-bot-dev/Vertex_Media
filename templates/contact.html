@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Book a Consultation | Vertex Media</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline-variant": "#c6c6cd",
+                        "tertiary-fixed": "#e0e3e5",
+                        "on-secondary": "#ffffff",
+                        "surface-variant": "#d3e4fe",
+                        "on-primary-fixed-variant": "#3f465c",
+                        "tertiary-fixed-dim": "#c4c7c9",
+                        "on-secondary-container": "#fffbff",
+                        "surface-container-high": "#dce9ff",
+                        "outline": "#76777d",
+                        "on-surface": "#0b1c30",
+                        "inverse-primary": "#bec6e0",
+                        "primary": "#000000",
+                        "on-background": "#0b1c30",
+                        "surface": "#f8f9ff",
+                        "primary-fixed-dim": "#bec6e0",
+                        "surface-dim": "#cbdbf5",
+                        "secondary-fixed": "#eaddff",
+                        "inverse-on-surface": "#eaf1ff",
+                        "secondary-fixed-dim": "#d2bbff",
+                        "surface-container": "#e5eeff",
+                        "tertiary": "#000000",
+                        "tertiary-container": "#191c1e",
+                        "on-primary": "#ffffff",
+                        "on-surface-variant": "#45464d",
+                        "on-error": "#ffffff",
+                        "primary-container": "#131b2e",
+                        "inverse-surface": "#213145",
+                        "on-secondary-fixed": "#25005a",
+                        "surface-bright": "#f8f9ff",
+                        "on-secondary-fixed-variant": "#5a00c6",
+                        "on-primary-container": "#7c839b",
+                        "surface-container-highest": "#d3e4fe",
+                        "on-tertiary-fixed-variant": "#444749",
+                        "secondary-container": "#8a4cfc",
+                        "background": "#f8f9ff",
+                        "on-primary-fixed": "#131b2e",
+                        "error": "#ba1a1a",
+                        "primary-fixed": "#dae2fd",
+                        "on-error-container": "#93000a",
+                        "error-container": "#ffdad6",
+                        "surface-container-low": "#eff4ff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#191c1e",
+                        "on-tertiary-container": "#818486",
+                        "on-tertiary": "#ffffff",
+                        "surface-tint": "#565e74",
+                        "secondary": "#712ae2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "container-max": "1280px",
+                        "stack-md": "16px",
+                        "stack-lg": "32px",
+                        "section-padding": "120px",
+                        "margin-mobile": "16px",
+                        "stack-sm": "8px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "display-lg-mobile": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "display-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg": ["40px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["30px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg-mobile": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "label-sm": ["14px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f8f9ff;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(15, 23, 42, 0.1);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #712ae2 0%, #131b2e 100%);
+            box-shadow: 0 4px 15px rgba(113, 42, 226, 0.3);
+        }
+
+        .hero-gradient {
+            background: radial-gradient(circle at top right, rgba(138, 76, 252, 0.08), transparent),
+                radial-gradient(circle at bottom left, rgba(19, 27, 46, 0.03), transparent);
+        }
+    </style>
+</head>
+
+<body class="font-body-md text-on-surface">
+    <!-- TopNavBar -->
+    <nav
+        class="fixed top-0 w-full z-50 bg-white/70 dark:bg-surface-container/70 backdrop-blur-xl border-b border-black/10 dark:border-white/10 shadow-sm">
+        <div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop h-20">
+            <div class="font-headline-md text-headline-md font-bold text-primary dark:text-on-surface tracking-tighter">
+                Vertex Media</div>
+            <div class="hidden md:flex gap-gutter items-center">
+                <a class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-on-surface transition-colors"
+                    href="#">Home</a>
+                <a class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-on-surface transition-colors"
+                    href="#">Services</a>
+                <a class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-on-surface transition-colors"
+                    href="#">Process</a>
+                <a class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-on-surface transition-colors"
+                    href="#">Portfolio</a>
+                <a class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-on-surface transition-colors"
+                    href="#">About</a>
+            </div>
+            <button
+                class="bg-primary text-on-primary px-6 py-3 rounded-full font-label-sm text-label-sm uppercase tracking-wider scale-95 active:scale-90 transition-transform">Book
+                a Growth Audit</button>
+        </div>
+    </nav>
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="hero-gradient py-section-padding px-margin-mobile md:px-margin-desktop">
+            <div class="max-w-container-max mx-auto text-center space-y-stack-lg">
+                <h1
+                    class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary max-w-4xl mx-auto">
+                    Schedule Your Free Growth Audit
+                </h1>
+                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                    Secure a 30-minute high-impact strategy session with Rohan, Bhavesh, or Mahir. We'll dismantle your
+                    current digital presence and architect your path to scale.
+                </p>
+                <!-- Trusted By Bar -->
+                <div
+                    class="pt-stack-lg border-t border-outline-variant/30 inline-flex flex-wrap justify-center gap-10 opacity-60 grayscale">
+                    <div class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-headline-md">health_and_safety</span>
+                        <span class="font-label-sm">HEALTHCARE PRO</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-headline-md">real_estate_agent</span>
+                        <span class="font-label-sm">ESTATE CORE</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-headline-md">shopping_bag</span>
+                        <span class="font-label-sm">LUXE COMMERCE</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Booking & Interface Section -->
+        <section class="pb-section-padding px-margin-mobile md:px-margin-desktop">
+            <div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+                <!-- Left: Booking Widget -->
+                <div class="lg:col-span-8">
+                    <div class="glass-card rounded-xl p-stack-lg md:p-12 shadow-sm">
+                        <div class="flex flex-col md:flex-row gap-gutter">
+                            <!-- Calendar Mockup -->
+                            <div class="w-full md:w-1/2">
+                                <div class="flex justify-between items-center mb-6">
+                                    <h3 id="monthYear" class="font-headline-md text-headline-md"></h3>
+                                    <div class="flex gap-2">
+                                        <button onclick="previousMonth()" class="p-2 hover:bg-secondary/10 rounded-lg transition-colors">
+                                            <span class="material-symbols-outlined">
+                                                chevron_left
+                                            </span>
+                                        </button>
+                                        <button onclick="nextMonth()" class="p-2 hover:bg-secondary/10 rounded-lg transition-colors">
+                                            <span class="material-symbols-outlined">
+                                                chevron_right
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-7 gap-1 text-center font-label-sm text-on-surface-variant mb-4 font-bold">
+                                    <span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span>
+                                </div>
+                                <div id="calendarGrid" class="grid grid-cols-7 gap-2 text-center bg-white/30 p-4 rounded-lg">
+                                </div>
+                                <p id="selectedDateDisplay" class="mt-4 text-center font-semibold text-secondary">
+                                    No date selected
+                                </p>
+                            </div>
+                            <!-- Time Slot Selector -->
+                            <div
+                                class="w-full md:w-1/2 border-t md:border-t-0 md:border-l border-outline-variant/30 pt-stack-lg md:pt-0 md:pl-gutter">
+                                <h3 class="font-headline-md text-headline-md mb-6">Available Slots</h3>
+                                <div class="space-y-3 max-h-[350px] overflow-y-auto pr-2">
+                                    <button
+                                        class="w-full py-4 px-6 rounded-lg border border-secondary text-secondary font-bold hover:bg-secondary/5 transition-colors">09:00
+                                        AM — 09:30 AM</button>
+                                    <button
+                                        class="w-full py-4 px-6 rounded-lg border border-outline-variant hover:border-secondary transition-colors">10:30
+                                        AM — 11:00 AM</button>
+                                    <button
+                                        class="w-full py-4 px-6 rounded-lg border border-outline-variant hover:border-secondary transition-colors">01:00
+                                        PM — 01:30 PM</button>
+                                    <button
+                                        class="w-full py-4 px-6 rounded-lg border border-outline-variant hover:border-secondary transition-colors">03:30
+                                        PM — 04:00 PM</button>
+                                    <button
+                                        class="w-full py-4 px-6 rounded-lg border border-outline-variant hover:border-secondary transition-colors">05:00
+                                        PM — 05:30 PM</button>
+                                </div>
+                                <div class="mt-8">
+                                    <button
+                                        class="btn-primary w-full py-4 rounded-full text-on-primary font-label-sm uppercase tracking-wider">Confirm
+                                        Appointment</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right: Benefits -->
+                <div class="lg:col-span-4 space-y-gutter">
+                    <div class="glass-card rounded-xl p-stack-lg space-y-6">
+                        <h2 class="font-headline-md text-headline-md">What to Expect</h2>
+                        <ul class="space-y-6">
+                            <li class="flex gap-4">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary">
+                                    <span class="material-symbols-outlined">map</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-headline-md text-body-lg font-bold">Personalized Digital Roadmap
+                                    </h4>
+                                    <p class="text-on-surface-variant font-body-md">A tailored strategy designed for
+                                        your specific industry and growth targets.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-4">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary">
+                                    <span class="material-symbols-outlined">analytics</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-headline-md text-body-lg font-bold">Competitor Analysis</h4>
+                                    <p class="text-on-surface-variant font-body-md">Deep-dive insights into what your
+                                        rivals are doing and how to outpace them.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-4">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary">
+                                    <span class="material-symbols-outlined">trending_up</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-headline-md text-body-lg font-bold">ROI Projections</h4>
+                                    <p class="text-on-surface-variant font-body-md">Clear, data-backed estimates of
+                                        potential returns on your digital investment.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Founder Badge -->
+                    <div class="relative overflow-hidden glass-card rounded-xl p-stack-lg group">
+                        <div
+                            class="absolute top-0 right-0 p-4 text-secondary/20 group-hover:text-secondary/40 transition-colors">
+                            <span class="material-symbols-outlined text-6xl">verified</span>
+                        </div>
+                        <div class="flex items-center gap-4 relative z-10">
+                            <img alt="Rohan - Founder" class="w-16 h-16 rounded-full object-cover border-2 border-white"
+                                data-alt="A professional headshot of a smiling male executive in a sleek, tailored navy blazer. The lighting is soft and cinematic, set against a blurred modern office background with subtle purple accent lights. The overall feel is one of approachable authority and high-end professional expertise."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDokWNnFOgM9Z4JsQkSVMBxmjmbziI8m0YjLFyPW0SO6M5b1bjxE4sLHQBu4BhctkmeXOLfNexWdp0apolVTuEWnNfoFboQ8e9hHssyArinpoA4-yaP4JlMyKgInnE3wqfXC4DBw1KAEsls49HnucenfFb4Tpp-6DDdp3HD10KY1pXURoncJVR_hYUTMrex38etsLEmYVOxscOwhzE21y_PtXrYmg5XAfQ3M_IPg9lFQC3ZEhlMqWegb6cRk7X4zOU8HTAXy-Jkvgw" />
+                            <div>
+                                <h4 class="font-headline-md text-body-lg font-bold">Consult with Rohan</h4>
+                                <p class="text-label-sm uppercase tracking-wide text-on-surface-variant">Lead Strategist
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonial Section -->
+        <section class="bg-primary py-section-padding text-on-primary">
+            <div class="max-w-4xl mx-auto px-margin-mobile text-center space-y-stack-lg">
+                <span class="material-symbols-outlined text-secondary text-5xl">format_quote</span>
+                <blockquote
+                    class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg italic">
+                    "Vertex Media didn't just build a website; they architected a growth engine. Our dental practice saw
+                    a 40% increase in bookings within the first quarter."
+                </blockquote>
+                <div class="pt-stack-md">
+                    <p class="font-bold text-headline-md">Dr. Sarah Jenkins</p>
+                    <p class="font-label-sm text-secondary uppercase tracking-widest">Founder, Bright Smile Dental</p>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ Section -->
+        <section class="py-section-padding px-margin-mobile md:px-margin-desktop">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="font-display-lg-mobile text-display-lg-mobile text-center mb-section-padding/2">Consultation
+                    FAQ</h2>
+                <div class="space-y-gutter">
+                    <div class="glass-card rounded-xl p-stack-lg">
+                        <h4 class="font-headline-md text-body-lg font-bold mb-2">Is the audit really free?</h4>
+                        <p class="text-on-surface-variant">Yes. We believe in providing value upfront. Our goal is to
+                            demonstrate our expertise and show you exactly how we can help you grow before you ever sign
+                            a contract.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-stack-lg">
+                        <h4 class="font-headline-md text-body-lg font-bold mb-2">Who will I be meeting with?</h4>
+                        <p class="text-on-surface-variant">You'll meet with one of our founding partners—Rohan, Bhavesh,
+                            or Mahir. We don't outsource our strategy sessions to junior account managers.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-stack-lg">
+                        <h4 class="font-headline-md text-body-lg font-bold mb-2">What do I need to prepare?</h4>
+                        <p class="text-on-surface-variant">Nothing specific. If you have your current marketing data or
+                            specific business goals in mind, that's helpful, but we'll guide the conversation through
+                            everything we need to know.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-primary dark:bg-tertiary-container w-full rounded-t-xl">
+        <div
+            class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg max-w-container-max mx-auto px-margin-desktop py-section-padding">
+            <div class="space-y-stack-md">
+                <div
+                    class="font-headline-lg text-headline-lg font-black text-on-primary dark:text-on-tertiary-container">
+                    Vertex Media</div>
+                <p class="font-body-md text-on-primary/70 dark:text-on-tertiary-container/70">© 2024 Vertex Media. Built
+                    for Growth.</p>
+            </div>
+            <div class="flex flex-col gap-4">
+                <h5 class="text-on-primary font-bold">Solutions</h5>
+                <a class="text-on-primary/70 hover:text-on-primary transition-all hover:underline" href="#">Dental Web
+                    Design</a>
+                <a class="text-on-primary/70 hover:text-on-primary transition-all hover:underline" href="#">Healthcare
+                    Solutions</a>
+                <a class="text-on-primary/70 hover:text-on-primary transition-all hover:underline"
+                    href="#">E-commerce</a>
+            </div>
+            <div class="flex flex-col gap-4">
+                <h5 class="text-on-primary font-bold">Company</h5>
+                <a class="text-on-primary/70 hover:text-on-primary transition-all hover:underline" href="#">About</a>
+                <a class="text-on-primary/70 hover:text-on-primary transition-all hover:underline" href="#">Process</a>
+                <a class="text-on-primary/70 hover:text-on-primary transition-all hover:underline"
+                    href="#">Portfolio</a>
+            </div>
+            <div class="flex flex-col gap-4">
+                <h5 class="text-on-primary font-bold">Legal</h5>
+                <a class="text-on-primary/70 hover:text-on-primary transition-all hover:underline" href="#">Privacy
+                    Policy</a>
+                <a class="text-on-primary/70 hover:text-on-primary transition-all hover:underline" href="#">Terms of
+                    Service</a>
+                <a class="text-on-primary/70 hover:text-on-primary transition-all hover:underline" href="#">Contact</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Simple micro-interaction for time slots
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', function (e) {
+                if (this.textContent.includes('AM') || this.textContent.includes('PM')) {
+                    document.querySelectorAll('button').forEach(btn => {
+                        if (btn.textContent.includes('AM') || btn.textContent.includes('PM')) {
+                            btn.classList.remove('border-secondary', 'text-secondary', 'font-bold');
+                            btn.classList.add('border-outline-variant');
+                        }
+                    });
+                    this.classList.remove('border-outline-variant');
+                    this.classList.add('border-secondary', 'text-secondary', 'font-bold');
+                }
+            });
+        });
+        let currentDate = new Date();
+        let selectedDate = null;
+
+        const monthYear = document.getElementById("monthYear");
+        const calendarGrid = document.getElementById("calendarGrid");
+        const selectedDateDisplay = document.getElementById("selectedDateDisplay");
+
+        function updateDateDisplay() {
+            if (selectedDate) {
+                const [year, month, day] = selectedDate.split('-');
+                const dateObj = new Date(year, parseInt(month) - 1, day);
+                const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                selectedDateDisplay.textContent = `Selected: ${dateObj.toLocaleDateString('en-US', options)}`;
+            } else {
+                selectedDateDisplay.textContent = "No date selected";
+            }
+        }
+
+        function renderCalendar() {
+            const year = currentDate.getFullYear();
+            const month = currentDate.getMonth();
+
+            monthYear.textContent = currentDate.toLocaleString('default', {
+                month: 'long',
+                year: 'numeric'
+            });
+
+            calendarGrid.innerHTML = "";
+
+            const firstDay = new Date(year, month, 1).getDay();
+            const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+            // Add empty cells for days before the first day of the month
+            for (let i = 0; i < firstDay; i++) {
+                const empty = document.createElement("div");
+                empty.className = "p-3 opacity-20";
+                calendarGrid.appendChild(empty);
+            }
+
+            const today = new Date();
+
+            // Add day cells
+            for (let day = 1; day <= daysInMonth; day++) {
+                const dateCell = document.createElement("div");
+                dateCell.textContent = day;
+                dateCell.className = "p-3 rounded-lg cursor-pointer text-center hover:bg-secondary/10 font-body-md transition-colors";
+
+                // Highlight today
+                if (
+                    day === today.getDate() &&
+                    month === today.getMonth() &&
+                    year === today.getFullYear()
+                ) {
+                    dateCell.classList.add("bg-secondary", "text-white", "font-bold");
+                }
+
+                // Click handler for date selection
+                dateCell.addEventListener("click", () => {
+                    document.querySelectorAll(".calendar-day").forEach(d => {
+                        d.classList.remove("bg-secondary", "text-white", "font-bold");
+                        d.classList.add("hover:bg-secondary/10");
+                    });
+
+                    dateCell.classList.add("bg-secondary", "text-white", "font-bold");
+                    dateCell.classList.remove("hover:bg-secondary/10");
+
+                    selectedDate = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+                    updateDateDisplay();
+                    console.log("Selected:", selectedDate);
+                });
+
+                dateCell.classList.add("calendar-day");
+                calendarGrid.appendChild(dateCell);
+            }
+
+            // Add empty cells for remaining days
+            const totalCells = firstDay + daysInMonth;
+            const remaining = 7 - (totalCells % 7);
+
+            if (remaining < 7) {
+                for (let i = 0; i < remaining; i++) {
+                    const empty = document.createElement("div");
+                    empty.className = "p-3 opacity-20";
+                    calendarGrid.appendChild(empty);
+                }
+            }
+        }
+
+        function previousMonth() {
+            currentDate.setMonth(currentDate.getMonth() - 1);
+            renderCalendar();
+        }
+
+        function nextMonth() {
+            currentDate.setMonth(currentDate.getMonth() + 1);
+            renderCalendar();
+        }
+
+        // Initial render
+        renderCalendar();
+        updateDateDisplay();
+
+    </script>
+</body>
+
+</html>

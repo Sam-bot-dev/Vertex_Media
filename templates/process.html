@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio &amp; Process | Vertex Media</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(15, 23, 42, 0.1);
+        }
+        .glass-card:hover {
+            backdrop-filter: blur(24px);
+            border-color: #712ae2;
+            transition: all 0.3s ease;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #712ae2 0%, #000000 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .cta-glow:hover {
+            box-shadow: 0 0 20px rgba(113, 42, 226, 0.4);
+        }
+        @keyframes scroll-line {
+            0% { height: 0%; }
+            100% { height: 100%; }
+        }
+        .timeline-line {
+            animation: scroll-line linear forwards;
+            animation-timeline: view();
+            animation-range: entry 10% exit 90%;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container": "#e5eeff",
+                      "on-secondary-container": "#fffbff",
+                      "on-secondary-fixed-variant": "#5a00c6",
+                      "surface": "#f8f9ff",
+                      "on-tertiary-fixed-variant": "#444749",
+                      "on-tertiary": "#ffffff",
+                      "inverse-primary": "#bec6e0",
+                      "primary": "#000000",
+                      "tertiary-container": "#191c1e",
+                      "error-container": "#ffdad6",
+                      "on-primary-fixed-variant": "#3f465c",
+                      "secondary-fixed": "#eaddff",
+                      "surface-tint": "#565e74",
+                      "on-secondary": "#ffffff",
+                      "outline": "#76777d",
+                      "primary-fixed-dim": "#bec6e0",
+                      "primary-container": "#131b2e",
+                      "surface-variant": "#d3e4fe",
+                      "background": "#f8f9ff",
+                      "on-primary": "#ffffff",
+                      "surface-container-lowest": "#ffffff",
+                      "on-primary-container": "#7c839b",
+                      "error": "#ba1a1a",
+                      "on-surface": "#0b1c30",
+                      "on-tertiary-container": "#818486",
+                      "secondary-fixed-dim": "#d2bbff",
+                      "tertiary-fixed": "#e0e3e5",
+                      "on-surface-variant": "#45464d",
+                      "on-background": "#0b1c30",
+                      "surface-container-low": "#eff4ff",
+                      "surface-bright": "#f8f9ff",
+                      "inverse-on-surface": "#eaf1ff",
+                      "secondary": "#712ae2",
+                      "surface-container-high": "#dce9ff",
+                      "inverse-surface": "#213145",
+                      "outline-variant": "#c6c6cd",
+                      "surface-dim": "#cbdbf5",
+                      "on-secondary-fixed": "#25005a",
+                      "on-error-container": "#93000a",
+                      "secondary-container": "#8a4cfc",
+                      "primary-fixed": "#dae2fd",
+                      "on-primary-fixed": "#131b2e",
+                      "surface-container-highest": "#d3e4fe",
+                      "tertiary": "#000000",
+                      "on-error": "#ffffff",
+                      "tertiary-fixed-dim": "#c4c7c9",
+                      "on-tertiary-fixed": "#191c1e"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "gutter": "24px",
+                      "stack-sm": "8px",
+                      "container-max": "1280px",
+                      "margin-desktop": "64px",
+                      "margin-mobile": "16px",
+                      "stack-lg": "32px",
+                      "section-padding": "120px",
+                      "stack-md": "16px"
+              },
+              "fontFamily": {
+                      "label-sm": ["Inter"],
+                      "body-lg": ["Inter"],
+                      "display-lg": ["Inter"],
+                      "headline-lg-mobile": ["Inter"],
+                      "headline-lg": ["Inter"],
+                      "display-lg-mobile": ["Inter"],
+                      "headline-md": ["Inter"],
+                      "body-md": ["Inter"]
+              },
+              "fontSize": {
+                      "label-sm": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                      "headline-lg-mobile": ["30px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                      "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                      "display-lg-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                      "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl border-b border-black/10 shadow-sm transition-all duration-300">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop h-20">
+<div class="font-headline-md text-headline-md font-bold text-primary tracking-tighter">Vertex Media</div>
+<div class="hidden md:flex items-center gap-stack-lg">
+<a class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#">Home</a>
+<a class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#">Services</a>
+<a class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold border-b-2 border-secondary" href="#">Process</a>
+<a class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold border-b-2 border-secondary" href="#">Portfolio</a>
+<a class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#">About</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-3 rounded-full font-label-sm text-label-sm uppercase tracking-wider scale-95 active:scale-90 transition-transform cta-glow">
+                Book a Growth Audit
+            </button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="py-section-padding px-margin-desktop max-w-container-max mx-auto text-center">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-stack-md gradient-text">Built for Conversion. <br/>Designed for Growth.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Explore our portfolio of high-performance digital solutions and our transparent 7-step process that guarantees success.</p>
+</section>
+<!-- Portfolio Section -->
+<section class="py-section-padding px-margin-desktop max-w-container-max mx-auto" id="portfolio">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-stack-md">
+<div class="max-w-xl">
+<span class="bg-secondary/10 text-secondary px-3 py-1 rounded-md font-label-sm text-label-sm uppercase tracking-wider mb-stack-sm inline-block">Portfolio</span>
+<h2 class="font-headline-lg text-headline-lg mt-stack-sm">Recent Case Studies</h2>
+</div>
+<div class="flex gap-stack-sm">
+<button class="p-3 rounded-full border border-outline-variant hover:border-secondary transition-colors"><span class="material-symbols-outlined">arrow_back</span></button>
+<button class="p-3 rounded-full border border-outline-variant hover:border-secondary transition-colors"><span class="material-symbols-outlined">arrow_forward</span></button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Project 1 -->
+<div class="glass-card rounded-xl overflow-hidden group">
+<div class="aspect-video overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A clean, professional physiotherapy clinic website mockup displayed on a modern laptop. The design features soft blues and whites, with intuitive appointment booking buttons and professional healthcare photography. The lighting is bright and corporate, reflecting a trustworthy and calming healthcare environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9tHGvxWLgQM9MGsQpqLraUTl1DpInWnaRk71iWG6F50DWVccJHB_ASQOrwh3uXhnvHGiMtTGEP7jUiikSBlgHOQY1adGHjPc0fHS4edtD1uzmrqxGguvq6gfKCD-PfCy_kGcgCnhmHwvrBfvwhMqfqvPfSmWS9ulhxPE1d88QaUHDMvzaZZJNe_5dPs3bCsBCJzdOJdHunTyfnCM3axtKiFfCELnRl1wwWpjz66ObeBjcG71zudQZbT80KXSXWZE_eI7E6vDv3xc"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="bg-white text-primary px-6 py-2 rounded-full font-label-sm text-label-sm">View Details</span>
+</div>
+</div>
+<div class="p-stack-lg">
+<div class="flex justify-between items-start mb-stack-md">
+<div>
+<h3 class="font-headline-md text-headline-md mb-1">Physiotherapy Clinic Website</h3>
+<p class="text-on-surface-variant">Medical &amp; Wellness</p>
+</div>
+<div class="bg-secondary text-on-primary px-3 py-1 rounded-md text-sm font-bold">+140% Bookings</div>
+</div>
+<div class="grid grid-cols-2 gap-stack-md mt-stack-lg border-t border-outline-variant pt-stack-md">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-1">GOAL</p>
+<p class="font-body-md text-body-md">Streamline digital intake and reduce manual phone scheduling.</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-1">RESULT</p>
+<p class="font-body-md text-body-md">Fully automated booking system with insurance integration.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="glass-card rounded-xl overflow-hidden group">
+<div class="aspect-video overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A high-end dental clinic website layout shown on a desktop screen. The UI is minimalist and clinical, using a palette of crisp whites and deep teals. There are clear call-to-action buttons for 'Emergency Care' and 'Book Online'. The aesthetic is professional, high-tier, and sterile but welcoming." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDy5B0nnilUILBN2mh96FEQ-esZIcbLyk6ogzoCnKzl845AlCEOruvCvQ4nH7SyhQ3GdtyWKsH8VUpLcEUKn82VxaJPYJx-T9DFpR4BBNfQXlma-mQC7DzmXKuujOzxSh4LgpZZrWaPwpAHM_RNNCpyfzwRubNfutPXKCm8mlbggkprMa9S3qssdlvE4FRWfY8O7kbe-p06N36RqcdacPsV3Obu970p3TXDsfGjLvjlbLYJgTshcM6rMFTtD_RWOKwQNG83Nm9vg2I"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="bg-white text-primary px-6 py-2 rounded-full font-label-sm text-label-sm">View Details</span>
+</div>
+</div>
+<div class="p-stack-lg">
+<div class="flex justify-between items-start mb-stack-md">
+<div>
+<h3 class="font-headline-md text-headline-md mb-1">Dental Clinic Website</h3>
+<p class="text-on-surface-variant">Healthcare Solutions</p>
+</div>
+<div class="bg-secondary text-on-primary px-3 py-1 rounded-md text-sm font-bold">+85% New Patients</div>
+</div>
+<div class="grid grid-cols-2 gap-stack-md mt-stack-lg border-t border-outline-variant pt-stack-md">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-1">GOAL</p>
+<p class="font-body-md text-body-md">Establish authority in cosmetic dentistry and local SEO.</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-1">RESULT</p>
+<p class="font-body-md text-body-md">Ranked #1 for 'Cosmetic Dentist Near Me' within 4 months.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="glass-card rounded-xl overflow-hidden group">
+<div class="aspect-video overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A dynamic, high-energy gym website interface featuring dark mode aesthetics with neon purple accents. The screen displays workout schedules, personal trainer profiles, and a membership signup flow. The mood is motivating, intense, and modern, using high-contrast photography of fitness professionals." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1heVvDBGUT2nV9FJajlKSc8qu_bKdWGhFAmJdod-2EJ9gwE-gi3CPKFUVQVlJP8e3McLnfutJpHmyt3SGo86K2aetuMx24WOZ9pyL3S7_khpfkd7aj9w4wzfSzelk5d6QHaBvi-mp92vXWBCRImTMAwp86zmq5PXflgCMkAcgP-ruXr6hQReKhtKeYFj0xlLGQVWONcGBmVIPQEpz6WqNS2iNxR6DXpSdQswVlCmH3ADlqrZTNUKbn6KRtLu059yTTR_oqM4sWac"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="bg-white text-primary px-6 py-2 rounded-full font-label-sm text-label-sm">View Details</span>
+</div>
+</div>
+<div class="p-stack-lg">
+<div class="flex justify-between items-start mb-stack-md">
+<div>
+<h3 class="font-headline-md text-headline-md mb-1">Gym Website</h3>
+<p class="text-on-surface-variant">Fitness &amp; Lifestyle</p>
+</div>
+<div class="bg-secondary text-on-primary px-3 py-1 rounded-md text-sm font-bold">3k+ Members Monthly</div>
+</div>
+<div class="grid grid-cols-2 gap-stack-md mt-stack-lg border-t border-outline-variant pt-stack-md">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-1">GOAL</p>
+<p class="font-body-md text-body-md">Create a seamless membership portal and class scheduler.</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-1">RESULT</p>
+<p class="font-body-md text-body-md">Reduced churn by 25% through personalized member dashboards.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 4 -->
+<div class="glass-card rounded-xl overflow-hidden group">
+<div class="aspect-video overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="An elegant restaurant website mockup featuring high-resolution culinary photography and a sophisticated layout. The color scheme uses warm wood tones and deep blacks. The UI includes a seamless reservation widget and an interactive digital menu. The lighting is moody and luxurious, evoking a high-end dining experience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjWxnytBGYv4SD8caGZkSYiH25QgzxSMLTWJoUs3FZI0XbQiit6W3JRXphkkcRxGuQUCB0QC0mLClfTAehIoH-VUeK7fC0SZQMZBLU10w2GrTNAn08cFxyazLhD7LzpzxgM30dX8Lp9L1M6X7oEyhlXp32PJASikwSmdw66h2Xlf3_W6aDmV0np15TafJP9PGQF-3PpNi9dR-9h39YNKktTPcft0xWfGK8bsqQ5nEpl-H31pO3ftYH9nUHs5eC8duCdjxf9VJcHhg"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="bg-white text-primary px-6 py-2 rounded-full font-label-sm text-label-sm">View Details</span>
+</div>
+</div>
+<div class="p-stack-lg">
+<div class="flex justify-between items-start mb-stack-md">
+<div>
+<h3 class="font-headline-md text-headline-md mb-1">Restaurant Website</h3>
+<p class="text-on-surface-variant">Hospitality &amp; Food</p>
+</div>
+<div class="bg-secondary text-on-primary px-3 py-1 rounded-md text-sm font-bold">+200% Web Traffic</div>
+</div>
+<div class="grid grid-cols-2 gap-stack-md mt-stack-lg border-t border-outline-variant pt-stack-md">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-1">GOAL</p>
+<p class="font-body-md text-body-md">Replace slow PDF menus with a responsive digital experience.</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-1">RESULT</p>
+<p class="font-body-md text-body-md">Online reservations became the primary source of dinner bookings.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Process Section -->
+<section class="py-section-padding bg-surface-container relative overflow-hidden" id="process">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-24">
+<span class="bg-secondary/10 text-secondary px-3 py-1 rounded-md font-label-sm text-label-sm uppercase tracking-wider mb-stack-sm inline-block">Our Workflow</span>
+<h2 class="font-headline-lg text-headline-lg mt-stack-sm">The 7-Step Success Roadmap</h2>
+</div>
+<div class="relative max-w-4xl mx-auto">
+<!-- Timeline Vertical Line -->
+<div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-1 bg-outline-variant transform md:-translate-x-1/2">
+<div class="timeline-line w-full bg-secondary"></div>
+</div>
+<!-- Steps -->
+<div class="space-y-24">
+<!-- Step 1 -->
+<div class="relative flex flex-col md:flex-row items-center justify-between group">
+<div class="hidden md:block w-[45%] text-right pr-12">
+<h3 class="font-headline-md text-headline-md mb-2">Consultation</h3>
+<p class="text-on-surface-variant">We dive deep into your business goals, target audience, and competitive landscape to find your unique edge.</p>
+</div>
+<div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 flex items-center justify-center w-10 h-10 rounded-full bg-secondary text-white z-10 shadow-lg font-bold">1</div>
+<div class="w-full md:w-[45%] pl-12 md:pl-12">
+<div class="glass-card p-6 rounded-xl md:hidden">
+<h3 class="font-headline-md text-headline-md mb-2">Consultation</h3>
+<p class="text-on-surface-variant">We dive deep into your business goals, target audience, and competitive landscape to find your unique edge.</p>
+</div>
+<div class="hidden md:flex items-center gap-4 text-secondary opacity-20 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-4xl">forum</span>
+<span class="font-label-sm uppercase">Discovery Phase</span>
+</div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative flex flex-col md:flex-row items-center justify-between group">
+<div class="w-full md:w-[45%] pr-0 md:pr-12 text-left md:text-right hidden md:block">
+<div class="flex flex-row-reverse items-center gap-4 text-secondary opacity-20 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-4xl">strategy</span>
+<span class="font-label-sm uppercase">Architecture</span>
+</div>
+</div>
+<div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 flex items-center justify-center w-10 h-10 rounded-full bg-secondary text-white z-10 shadow-lg font-bold">2</div>
+<div class="w-full md:w-[45%] pl-12">
+<div class="glass-card p-6 rounded-xl">
+<h3 class="font-headline-md text-headline-md mb-2">Planning</h3>
+<p class="text-on-surface-variant">Sitemaps, user flows, and technical specifications are mapped out to ensure a solid foundation.</p>
+</div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative flex flex-col md:flex-row items-center justify-between group">
+<div class="w-full md:w-[45%] pr-12 text-right hidden md:block">
+<h3 class="font-headline-md text-headline-md mb-2">Design</h3>
+<p class="text-on-surface-variant">Our team crafts a high-fidelity visual identity that resonates with your brand and converts visitors.</p>
+</div>
+<div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 flex items-center justify-center w-10 h-10 rounded-full bg-secondary text-white z-10 shadow-lg font-bold">3</div>
+<div class="w-full md:w-[45%] pl-12">
+<div class="glass-card p-6 rounded-xl md:hidden">
+<h3 class="font-headline-md text-headline-md mb-2">Design</h3>
+<p class="text-on-surface-variant">Our team crafts a high-fidelity visual identity that resonates with your brand and converts visitors.</p>
+</div>
+<div class="hidden md:flex items-center gap-4 text-secondary opacity-20 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-4xl">palette</span>
+<span class="font-label-sm uppercase">Visual UI</span>
+</div>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="relative flex flex-col md:flex-row items-center justify-between group">
+<div class="w-full md:w-[45%] pr-12 text-right hidden md:block">
+<div class="flex flex-row-reverse items-center gap-4 text-secondary opacity-20 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-4xl">code</span>
+<span class="font-label-sm uppercase">Full Stack</span>
+</div>
+</div>
+<div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 flex items-center justify-center w-10 h-10 rounded-full bg-secondary text-white z-10 shadow-lg font-bold">4</div>
+<div class="w-full md:w-[45%] pl-12">
+<div class="glass-card p-6 rounded-xl">
+<h3 class="font-headline-md text-headline-md mb-2">Development</h3>
+<p class="text-on-surface-variant">Clean, scalable code turns the designs into a high-performance reality with seamless animations.</p>
+</div>
+</div>
+</div>
+<!-- Step 5 -->
+<div class="relative flex flex-col md:flex-row items-center justify-between group">
+<div class="w-full md:w-[45%] pr-12 text-right hidden md:block">
+<h3 class="font-headline-md text-headline-md mb-2">Review</h3>
+<p class="text-on-surface-variant">We conduct rigorous quality assurance and user testing to ensure perfection across all devices.</p>
+</div>
+<div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 flex items-center justify-center w-10 h-10 rounded-full bg-secondary text-white z-10 shadow-lg font-bold">5</div>
+<div class="w-full md:w-[45%] pl-12">
+<div class="glass-card p-6 rounded-xl md:hidden">
+<h3 class="font-headline-md text-headline-md mb-2">Review</h3>
+<p class="text-on-surface-variant">We conduct rigorous quality assurance and user testing to ensure perfection across all devices.</p>
+</div>
+<div class="hidden md:flex items-center gap-4 text-secondary opacity-20 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-4xl">visibility</span>
+<span class="font-label-sm uppercase">QA Testing</span>
+</div>
+</div>
+</div>
+<!-- Step 6 -->
+<div class="relative flex flex-col md:flex-row items-center justify-between group">
+<div class="w-full md:w-[45%] pr-12 text-right hidden md:block">
+<div class="flex flex-row-reverse items-center gap-4 text-secondary opacity-20 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-4xl">rocket_launch</span>
+<span class="font-label-sm uppercase">Live Site</span>
+</div>
+</div>
+<div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 flex items-center justify-center w-10 h-10 rounded-full bg-secondary text-white z-10 shadow-lg font-bold">6</div>
+<div class="w-full md:w-[45%] pl-12">
+<div class="glass-card p-6 rounded-xl">
+<h3 class="font-headline-md text-headline-md mb-2">Launch</h3>
+<p class="text-on-surface-variant">Your project goes live! We handle the migration, indexing, and performance monitoring.</p>
+</div>
+</div>
+</div>
+<!-- Step 7 -->
+<div class="relative flex flex-col md:flex-row items-center justify-between group">
+<div class="w-full md:w-[45%] pr-12 text-right hidden md:block">
+<h3 class="font-headline-md text-headline-md mb-2">Support</h3>
+<p class="text-on-surface-variant">Ongoing maintenance, security updates, and performance tuning to keep you ahead of the curve.</p>
+</div>
+<div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 flex items-center justify-center w-10 h-10 rounded-full bg-secondary text-white z-10 shadow-lg font-bold">7</div>
+<div class="w-full md:w-[45%] pl-12">
+<div class="glass-card p-6 rounded-xl md:hidden">
+<h3 class="font-headline-md text-headline-md mb-2">Support</h3>
+<p class="text-on-surface-variant">Ongoing maintenance, security updates, and performance tuning to keep you ahead of the curve.</p>
+</div>
+<div class="hidden md:flex items-center gap-4 text-secondary opacity-20 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-4xl">support_agent</span>
+<span class="font-label-sm uppercase">Growth Ops</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-section-padding px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<span class="bg-secondary/10 text-secondary px-3 py-1 rounded-md font-label-sm text-label-sm uppercase tracking-wider mb-stack-sm inline-block">Client Success</span>
+<h2 class="font-headline-lg text-headline-lg mt-stack-sm">What the Leaders Say</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Testimonial 1 -->
+<div class="glass-card p-stack-lg rounded-xl flex flex-col h-full">
+<div class="flex text-secondary mb-stack-md">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md mb-stack-lg italic text-on-surface-variant flex-grow">"Vertex Media transformed our digital presence completely. The new booking system is flawless and our patient acquisition has nearly doubled in the first quarter alone."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden border-2 border-secondary">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of a female healthcare director in a bright, modern clinic environment. She is smiling confidently, wearing a professional lab coat. The lighting is soft and even, highlighting her expertise and warmth in a high-end corporate style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDYKmABXPCz1URqpdUrw11tiFFZtYu8lKZh9IfbZ__gDdMg7l-zav4wCFBNSq-JBq3_tIK8AkYkcgiWFeCDyXcV8X-yiekrUBUushTZOaZZ1w88_Zy2hoA5ZSe2J-qCJmZ8uxygHYztHQvx34VdfacNNjmVuXhaiWMXw98Aa-MuTbTgUJjxMqkzgxipQqR5FMbDb3V_VgimwU47nGC_nd_mNz_jnlmVGJR1la2MlWAeshKkHzxq22BMcbvp2wEtSeN52YOLmtoymw"/>
+</div>
+<div>
+<p class="font-bold">Dr. Sarah Jenkins</p>
+<p class="text-sm text-on-surface-variant">Founder, Jenkins Dental</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="glass-card p-stack-lg rounded-xl flex flex-col h-full">
+<div class="flex text-secondary mb-stack-md">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md mb-stack-lg italic text-on-surface-variant flex-grow">"The timeline they promised was kept to the day. The development phase was transparent, and the final gym portal is something our members actually enjoy using daily."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden border-2 border-secondary">
+<img class="w-full h-full object-cover" data-alt="A close-up portrait of a male fitness entrepreneur in a stylish, modern gym setting. He is wearing high-end athletic apparel and has a determined, professional expression. The background is slightly blurred with atmospheric gym lighting and high-tech equipment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfRDB3t0-a5sV1RGTAP341oUzlJGDAdDvbZdrSZIzSjG2n2VpsOHIjQgb-0AdSJVthIP6hxwJh7gLfiyeGdABPetfzK7CsO8flXYlZQTwcg2_pRa3UDsTmPA4W19LJrDH91SI88mBv9DQVniztzwi4dEQEomyUsbi_f0y4hNb7k-dcsT1lK0e_2txQVqc6xZcvBINCspH0X2Oh8npTQFfYnI-Rn94so66vwJZU4iVuiMroLaOAiTy_Ar00Ut6T58qztaH1SvpYGAg"/>
+</div>
+<div>
+<p class="font-bold">Mark Thompson</p>
+<p class="text-sm text-on-surface-variant">CEO, IronPeak Fitness</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="glass-card p-stack-lg rounded-xl flex flex-col h-full">
+<div class="flex text-secondary mb-stack-md">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md mb-stack-lg italic text-on-surface-variant flex-grow">"Unmatched attention to detail. Their process is so structured that you always know exactly what stage your project is at. Highly recommended for any professional service business."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden border-2 border-secondary">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of a female restaurateur in an elegant, modern dining room. She is dressed in a sophisticated black blazer and displays a calm, leadership-oriented demeanor. The lighting is warm and editorial, reflecting the luxury hospitality industry." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDADY6xueKJB43g6XhguISidnlPCYfbzhioW56FN7FC5-IZwbjV1wj3YeHg5a9AA72eakU7Bdo5U6Z2trPnkYs2W_9w1WryRxaFjkFemsqv8neRYLB_ayXX21Gr8nQ63k2emxJ236n9k4MDL8H4FKVGdp3eTMLvjBrpZCGtRICVPXIG0UNsOI2GxY7LoMKVxwyB9uulH8dFy2wNmqIp66AbuDIhZgopVWvWQAym6umJ-GvQhIEwBkVZO2rNhwgpFD_lllSRU1aUc6Q"/>
+</div>
+<div>
+<p class="font-bold">Elena Rossi</p>
+<p class="text-sm text-on-surface-variant">Owner, L'Anima Bistro</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Conversion Section -->
+<section class="py-section-padding bg-primary text-on-primary">
+<div class="max-w-container-max mx-auto px-margin-desktop text-center">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-stack-lg">Ready to scale your business?</h2>
+<p class="font-body-lg text-body-lg mb-12 opacity-80 max-w-xl mx-auto">Get a free digital audit of your current presence and a roadmap for your next growth phase.</p>
+<div class="flex flex-col md:flex-row gap-stack-md justify-center">
+<button class="px-8 py-4 bg-secondary text-white rounded-full font-label-sm text-label-sm uppercase tracking-wider cta-glow transition-all">Book Your Audit</button>
+<button class="px-8 py-4 border border-on-primary/30 text-on-primary rounded-full font-label-sm text-label-sm uppercase tracking-wider hover:bg-white/10 transition-all">View Pricing</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-tertiary-container w-full rounded-t-xl text-on-primary dark:text-on-tertiary-container font-body-md text-body-md">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg max-w-container-max mx-auto px-margin-desktop py-section-padding">
+<div class="space-y-stack-md">
+<div class="font-headline-lg text-headline-lg font-black text-on-primary dark:text-on-tertiary-container">Vertex Media</div>
+<p class="text-on-primary/70">Engineering digital growth through strategic design and modern technology.</p>
+</div>
+<div>
+<h4 class="font-bold mb-6">Expertise</h4>
+<ul class="space-y-4">
+<li><a class="text-on-primary/70 dark:text-on-tertiary-container/70 hover:text-on-primary hover:underline transition-all" href="#">Dental Web Design</a></li>
+<li><a class="text-on-primary/70 dark:text-on-tertiary-container/70 hover:text-on-primary hover:underline transition-all" href="#">Healthcare Solutions</a></li>
+<li><a class="text-on-primary/70 dark:text-on-tertiary-container/70 hover:text-on-primary hover:underline transition-all" href="#">E-commerce</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6">Company</h4>
+<ul class="space-y-4">
+<li><a class="text-on-primary/70 dark:text-on-tertiary-container/70 hover:text-on-primary hover:underline transition-all" href="#">Privacy Policy</a></li>
+<li><a class="text-on-primary/70 dark:text-on-tertiary-container/70 hover:text-on-primary hover:underline transition-all" href="#">Terms of Service</a></li>
+<li><a class="text-on-primary/70 dark:text-on-tertiary-container/70 hover:text-on-primary hover:underline transition-all" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6">Newsletter</h4>
+<form class="flex flex-col gap-4">
+<input class="bg-white/10 border border-white/20 rounded-lg px-4 py-2 text-white placeholder:text-white/40 focus:outline-none focus:border-secondary" placeholder="Email address" type="email"/>
+<button class="bg-secondary text-white py-2 rounded-lg font-bold">Subscribe</button>
+</form>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop py-8 border-t border-white/10 text-center text-on-primary/50">
+            © 2024 Vertex Media. Built for Growth.
+        </div>
+</footer>
+<script>
+        // Navbar interaction
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('h-16');
+                nav.classList.remove('h-20');
+            } else {
+                nav.classList.add('h-20');
+                nav.classList.remove('h-16');
+            }
+        });
+    </script>
+</body></html>
