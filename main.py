@@ -14,6 +14,9 @@ def contact():
 @app.route('/about')
 def about():
     return render_template('about.html')
+@app.route('/process')
+def process():
+    return render_template('process.html')
 if __name__ == '__main__':
     app.run(debug=True)
 
